@@ -16,3 +16,5 @@ https://lernantino.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Patrick Cranford 
+
+### © Run Buddy, Inc
