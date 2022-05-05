@@ -310,6 +310,8 @@ line-height: 1.3;
   flex-wrap: wrap;
   flex: 1;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-info div {
@@ -336,11 +338,29 @@ line-height: 1.3;
 }
 
 .contact-form form {
-  flex-direction: column;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contact-form .contact-info textarea {
+  display: block;
+  width: 100%;
+  padding: 7px 15px;
+  margin: auto;
 }
 
 .flex-row {
   display: flex;
 }
 
+.button{
+background-color: #fce138;
+border:none;
+font-size: 16px;
+width: 383px;
+height: 38px;
+
+}
 /* REACH OUT STYLES END */
