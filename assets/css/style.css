@@ -28,6 +28,7 @@ header h1 {
   margin: 0;
 
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -38,17 +39,17 @@ header nav {
 }
 
 
-header nav ul  {
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  list-style: none;  
+  list-style: none;
 
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.5vw;
 
@@ -91,8 +92,10 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
+  align-items: flex-start;
+
 }
+
 /* Hero Style End */
 
 .hero-form {
@@ -100,13 +103,14 @@ section {
   background-color: #fce138;
   padding: 20px;
   color: #024e76;
-  
+
 }
 
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
+
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -132,17 +136,16 @@ section {
   padding: 10px 20px;
   font-size: 16px;
   width: 40%;
-  margin: 3.5% ;
+  margin: 3.5%;
 }
 
 .hero.cta {
-
-width: 35%;
-text-align: right;
-margin: 3.5%;
-color: #fff;
-font-size: 18px;
-line-height: 1.3;
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .hero.cta h2 {
@@ -179,6 +182,7 @@ line-height: 1.3;
   align-items: center;
   justify-content: space-between;
 }
+
 .step h3 {
   color: #024e76;
   font-size: 46px;
@@ -200,7 +204,7 @@ line-height: 1.3;
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color:#024e76;
+  color: #024e76;
 
 }
 
@@ -218,7 +222,7 @@ line-height: 1.3;
 }
 
 .section-title {
-  font-size: 55px;
+  font-size: px;
   color: #024e76;
   border-bottom: 3px solid;
   padding-bottom: 20 px;
@@ -245,7 +249,7 @@ line-height: 1.3;
 }
 
 .trainer {
- 
+
   background: #024e76;
   color: #fce138;
   flex: 1;
@@ -289,15 +293,16 @@ line-height: 1.3;
   background: #024e76;
 }
 
-.contact-info> * {
+.contact-info>* {
   flex: 1;
   margin: 15px;
 
 }
+
 .contact-info {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .contact h2 {
@@ -309,14 +314,13 @@ line-height: 1.3;
   justify-content: space-between;
   flex-wrap: wrap;
   flex: 1;
-  display: block;
   width: 100%;
   height: 100%;
 }
 
 .contact-info div {
   color: white;
- 
+
 }
 
 .contact-info h3 {
@@ -326,7 +330,8 @@ line-height: 1.3;
 }
 
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
@@ -342,6 +347,16 @@ line-height: 1.3;
   padding: 10px;
   box-sizing: border-box;
   margin: 0;
+
+}
+
+.contact-form label,
+.contact-form input {
+  display: block;
+}
+
+.contact-form input {
+  width: 100%;
 }
 
 .contact-form .contact-info textarea {
@@ -355,12 +370,17 @@ line-height: 1.3;
   display: flex;
 }
 
-.button{
-background-color: #fce138;
-border:none;
-font-size: 16px;
-width: 383px;
-height: 38px;
-
+.button {
+  background-color: #fce138;
+  border: none;
+  font-size: 16px;
+  width: 100%;
 }
+
+@media screen and (min-width: 481px) {
+  .contact-info {
+    flex-direction: row;
+  }
+}
+
 /* REACH OUT STYLES END */
