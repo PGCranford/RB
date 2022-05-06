@@ -222,7 +222,7 @@ section {
 }
 
 .section-title {
-  font-size: px;
+  font-size: 48px;
   color: #024e76;
   border-bottom: 3px solid;
   padding-bottom: 20 px;
@@ -252,7 +252,7 @@ section {
 
   background: #024e76;
   color: #fce138;
-  flex: 1;
+  flex-direction: column;
 }
 
 .trainer img {
@@ -377,7 +377,7 @@ section {
   width: 100%;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (max-width:980) {
   .contact-info {
     flex-direction: row;
   }
